@@ -1,0 +1,35 @@
+var user=prompt("What's for lunch?");
+user.toLowerCase();
+
+switch(user){
+    case 'sandwich':
+        var sandwich=prompt("Turkey or Pastrami? Or both?");
+        
+        if(sandwich==="turkey"||sandwich==="pastrami"){
+            var topping=prompt("With Mayo or Mustard?");
+            if(topping==="mayo"||"mustard"){
+                 console.log(sandwich+" with "+topping);
+            }
+     
+            
+           
+        
+        var side=prompt("With a side of salad?");
+        if(side==="yes"){
+            console.log(sandwich + " "+topping+" "+"and a side salad.");
+        }
+        else{
+            console.log("Pastromeh" + " "+topping+" "+"and a side salad.");
+        }
+        }
+         
+        break;
+    case 'salad':
+        console.log("What kind of salad?");
+        break;
+        case 'leftovers':
+        console.log("What kind of leftovers?");
+        break;
+    default:
+    console.log("Yuck--not for lunch!!!");
+}
